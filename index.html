@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG Workshop Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>GDG Workshop</h1>
+        <div class="form-container">
+            <div id="login-form" class="form">
+                <h2>Login to GDG IILM_CET</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button id="login-button">Login</button>
+                <p>or</p>
+                <div class="social-login">
+                    <button id="google-login">Login with Google</button>
+                    <button id="github-login">Login with GitHub</button>
+                    <button id="facebook-login">Login with Facebook</button>
+                </div>
+                <p><a href="#" id="show-signup">Don't have an account? Sign up</a></p>
+                <p><a href="#" id="forgot-password">Forgot your password?</a></p>
+            </div>
+            <div id="signup-form" class="form hidden">
+                <h2>Sign Up</h2>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button id="signup-button">Sign Up</button>
+                <p><a href="#" id="show-login">Already have an account? Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
